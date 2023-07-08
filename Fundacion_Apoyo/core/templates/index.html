@@ -1,0 +1,135 @@
+<div class="container">
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fundación Apoyo</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+	<link href="{% static 'css/navbar.css' %}" rel="stylesheet">
+	<link href="{% static 'css/botoncarr.css' %}" rel="stylesheet">
+  </head>
+  <body>
+	
+
+ 	
+
+	<!-- Encabezado -->
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="text-center">
+				Fundación Apoyo
+			</h3>
+		</div>
+	</div>
+	
+
+	<img class="main-inf-img img-fluid smaller-logo" src="{% static '/img/logo.png' %}" alt="" />
+	<!-- Menu nav -->
+	<nav class="navbar">
+		<ul class="nav-links">
+		  <li class="nav-item">
+			<a class="nav-link active" href="{% url 'index' %}" role="link">Inicio</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link active" href="{% url 'form-contacto' %}" role="link">Contáctanos</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link active" href="{% url 'crud' %}" role="link">Medicamentos</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link active" href="{% url 'crearcuenta' %}" role="link">Regístrate</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link active" href="{% url 'sesion' %}">Iniciar sesión</a>
+		  </li>
+		</ul>
+	  </nav>
+	  
+	
+
+	<!-- carrucel -->
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="{% static '/img/rotwailersito.jpg' %}" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			</div>
+		  </div>
+		</a>
+		  <div class="carousel-item">
+			<img src="{% static '/img/toy-t.jpg' %}" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			</div>
+		  </div>
+		  </a>
+		  <div class="carousel-item">
+			<img src="{% static '/img/peirrito.jpg' %}" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			</div>
+		  </div>
+		</a>
+		</div>
+  </div>
+
+	<!-- Subtitulo -->
+
+<div class="Subtitulo">
+	<div class="row">
+		<div class="col-md-12">
+			<h3>
+				Fundación Apoyo 
+			</h3>
+			<div class="">Fundación apoyo se preocupa por el bienestar de sus residentes			</div>
+			<div class="">Nuestra Fundación brinda una amplia gama de servicios especializados para el cuidado y bienestar de nuestros queridos ancianos. Nuestro equipo altamente capacitado ofrece atención médica integral, servicios de enfermería las 24 horas, terapias físicas y ocupacionales, actividades recreativas, asistencia en la vida diaria, así como un entorno seguro y acogedor que promueve la calidad de vida de nuestros residentes.</div>
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<!-- Botones -->
+	<div class="boton-dinamico">
+	  <img alt="Bootstrap Image Preview" src="{% static 'img/logo.png' %}" style="width: 250px;" height="143px"/>
+	  <span class="texto-boton">nuestra visión y misión</span>
+	  <a class="btn btn-primary" href="{% url 'gatos' %}" role="button">revisar</a>
+	</div>
+  </div>
+  
+<!-- footer -->
+<div class="container">
+{% include 'footer.html' %}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+	
+    <script src="{ % static '/js/jquery.min.js' %}"></script>
+    <script src="{ % static '/js/bootstrap.min.js' %} "></script>
+    <script src="{ % static  '/js/scripts.js' %} "></script>
+  </body>
+  
+</html>
